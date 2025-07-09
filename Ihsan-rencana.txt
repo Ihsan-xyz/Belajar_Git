@@ -1,0 +1,90 @@
+Tentu, ini beberapa contoh rencana belajar framework Laravel yang bisa Anda gunakan sebagai panduan, mulai dari rencana cepat hingga rencana yang lebih komprehensif.
+
+Pilihan Rencana Belajar
+Anda bisa memilih salah satu dari tiga model rencana ini sesuai dengan waktu dan tingkat kedalaman yang Anda inginkan.
+
+Rencana Cepat (1-2 Minggu): Fokus pada fundamental untuk bisa membuat aplikasi sederhana secepat mungkin. Cocok jika Anda sudah mahir PHP.
+
+Rencana Komprehensif (1 Bulan): Pendekatan terstruktur untuk memahami fitur-fitur inti Laravel secara mendalam. Paling direkomendasikan untuk pemula.
+
+Rencana Lanjutan (Berkelanjutan): Untuk Anda yang sudah menguasai dasar dan ingin menjadi seorang profesional Laravel.
+
+## Rencana 1: Jalur Cepat (1-2 Minggu) 🚀
+Rencana ini mengasumsikan Anda sudah memiliki pemahaman yang kuat tentang PHP, OOP, dan konsep dasar web development.
+
+Tujuan: Mampu membuat aplikasi CRUD (Create, Read, Update, Delete) sederhana.
+
+Hari 1-2: Setup dan Konsep Dasar
+
+Instalasi: Siapkan environment lokal (XAMPP/Laragon/Herd) dan install Laravel menggunakan Composer.
+
+Struktur Direktori: Pahami fungsi folder-folder utama (app, routes, resources, public).
+
+Routing & Controller: Buat route sederhana di routes/web.php yang memanggil sebuah method di Controller. Pelajari cara membuat Controller dengan Artisan (php artisan make:controller).
+
+Views & Blade: Buat file Blade di resources/views dan pelajari sintaks dasar Blade seperti {{ $variable }} dan @yield.
+
+Hari 3-5: Database dan Eloquent ORM
+
+Konfigurasi Database: Atur koneksi database di file .env.
+
+Migration: Buat tabel database menggunakan Migration (php artisan make:migration). Jalankan migrasi dengan php artisan migrate.
+
+Model & Eloquent: Buat Model (php artisan make:model) untuk berinteraksi dengan tabel. Gunakan Tinker (php artisan tinker) untuk mencoba perintah Eloquent dasar seperti User::all(), User::find(1), dan User::create([...]).
+
+Hari 6-10: Proyek CRUD Sederhana
+
+Fokus: Buat aplikasi sederhana seperti "Daftar Tugas" atau "Blog Mini".
+
+Implementasi:
+
+Buat form untuk menambah data (Create).
+
+Tampilkan semua data dari database dalam sebuah tabel (Read).
+
+Buat halaman untuk mengedit data yang sudah ada (Update).
+
+Tambahkan tombol untuk menghapus data (Delete).
+
+Validasi: Pelajari cara melakukan validasi request form sederhana.
+
+Hari 11-14: Fitur Tambahan & Review
+
+Authentication Scaffolding: Coba install Laravel Breeze untuk sistem login dan registrasi instan.
+
+Review & Refactor: Perbaiki dan rapikan kode yang sudah Anda tulis.
+
+## Rencana 2: Komprehensif (1 Bulan) 📚
+Pendekatan ini lebih sistematis dan mendalam, cocok untuk membangun fondasi yang kuat.
+
+Minggu 1: Fondasi Laravel
+
+Topik: Instalasi, Konsep MVC (Model-View-Controller), Routing, Controller, Views (Blade Engine), dan passing data dari Controller ke View.
+
+Tujuan: Memahami alur kerja dasar sebuah request di Laravel, dari URL hingga tampilan di browser.
+
+Proyek Mini: Membuat beberapa halaman statis (Beranda, Tentang Kami, Kontak) menggunakan layout Blade (@extends, @section, @yield).
+
+Minggu 2: Database & Eloquent
+
+Topik: Konfigurasi database, Schema Builder (Migrations), Seeder (mengisi data dummy), Model, dan pengenalan Eloquent ORM.
+
+Tujuan: Mampu merancang, membuat, dan mengisi struktur database, serta melakukan operasi data dasar menggunakan Eloquent dan Tinker.
+
+Proyek Mini: Rancang dan buat tabel untuk proyek blog (misalnya tabel users dan posts). Isi dengan data dummy menggunakan Seeder.
+
+Minggu 3: Membangun Fitur Inti (CRUD)
+
+Topik: Form Handling, Request Validation (validasi input), Eloquent Relationships (One to Many, Many to Many), dan implementasi CRUD secara lengkap.
+
+Tujuan: Mampu membuat fungsionalitas inti dari sebuah aplikasi web.
+
+Proyek Mini: Lanjutkan proyek blog. Buat fitur untuk menambah postingan baru, menampilkan semua postingan, melihat detail satu postingan, mengedit, dan menghapusnya. Hubungkan postingan dengan pengguna menggunakan relasi Eloquent.
+
+Minggu 4: Fitur Lanjutan & Finalisasi
+
+Topik: Middleware (untuk proteksi route), Authentication (menggunakan Laravel Breeze/Jetstream), Asset Bundling (Vite), dan dasar-dasar API.
+
+Tujuan: Mengamankan aplikasi dengan sistem login dan memahami cara kerja fitur-fitur modern Laravel.
+
+Proyek Mini: Tambahkan sistem otentikasi pada blog. Batasi agar hanya user yang login yang bisa membuat postingan. Pastikan user hanya bisa mengedit atau menghapus postingannya sendiri.
